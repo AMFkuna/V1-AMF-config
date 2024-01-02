@@ -47,6 +47,11 @@ install_script = install.sh
 [file_manager]
 enable_object_processing = True
 
+[update_manager client mainsail]
+type = web
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
 [notifier print_events]
 url = pover://uxx2q3e6wkc7ojtg3f5f8k5qjtaprh@aex1136mdqf1unr7t8jzegppggsy23
 events = *
