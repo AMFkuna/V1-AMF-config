@@ -38,7 +38,6 @@ enable_auto_refresh = True
 [update_manager Klippain]
 type = git_repo
 path = ~/klippain_config
-channel = beta
 origin = https://github.com/Frix-x/klippain.git
 primary_branch = main
 managed_services = moonraker klipper
@@ -73,4 +72,14 @@ virtualenv = ~/.KlipperScreen-env
 system_dependencies = scripts/system-dependencies.json
 requirements = scripts/KlipperScreen-requirements.txt
 managed_services = KlipperScreen
+
+[update_manager Klippain-ShakeTune]
+type = git_repo
+origin = https://github.com/Frix-x/klippain-shaketune.git
+path = ~/klippain_shaketune
+virtualenv = ~/klippain_shaketune-env
+requirements = requirements.txt
+system_dependencies = system-dependencies.json
+primary_branch = main
+managed_services = klipper
 
